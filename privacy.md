@@ -109,29 +109,40 @@ We will update this list before adding new third-party services to the App.
 
 ## 6. International Data Transfers
 
-We are based in the United Arab Emirates. Some of our service providers (notably Google for Firebase services) host data on servers outside the UAE, including in the United States, the European Union, and other regions.
+Memeboard is operated by Samwise & Co (Dubai, UAE) but our servers are located in **Bangalore, India**, hosted on the DigitalOcean BLR1 data center. Our application servers, primary database, and core storage all run in the same region. Media content (memes, thumbnails) is served through Cloudflare's global content delivery network, which caches content at the geographic edge closest to you for performance.
 
-For users in the European Economic Area (EEA), data transferred outside the EEA is protected by appropriate safeguards including Standard Contractual Clauses (SCCs) as provided by our service providers.
+Other service providers we use may store data in different regions:
 
-For users in the UAE, transfers comply with the UAE PDPL by ensuring service providers maintain adequate data protection standards.
+- **Firebase services (Google LLC)**: data may be stored in Google's global infrastructure including United States, European Union, and other regions depending on Google's routing
+- **Cloudflare**: operates a global edge network across many regions
+
+For users in the **European Economic Area (EEA), United Kingdom, and Switzerland**, your data is processed outside the EEA. We rely on Standard Contractual Clauses (SCCs) approved by the European Commission to ensure your data receives an equivalent level of protection as it would within the EEA. By using our service, you consent to this international data transfer. Cloudflare's data processing is governed by their Data Processing Addendum available at [cloudflare.com/cloudflare-customer-dpa](https://www.cloudflare.com/cloudflare-customer-dpa/).
+
+For users in the **United Arab Emirates**, transfers comply with the UAE PDPL by ensuring our service providers maintain adequate data protection standards.
+
+For users in **India**, your data is processed within India by our primary infrastructure.
 
 By using the App, you acknowledge that your data may be transferred to and stored in countries outside your country of residence.
-
 ---
 
 ## 7. How Long We Keep Your Data
 
-We retain your data only as long as necessary to provide the service or meet legal obligations.
+We retain your data only as long as necessary to provide the service or meet legal obligations. Where deletion is supported, you can request it at any time as described in Section 8.
 
 | Data category | Retention period |
 |---|---|
-| Account information | Until you delete your account |
-| Favorites and recents | Until you delete your account, or you remove them in the App |
-| Search analytics (anonymized) | Up to 30 days for aggregation, then deleted |
-| FCM device tokens | Until you uninstall the App or the token is refreshed |
-| Crash and operational logs | Up to 90 days |
+| Account information (email, name, Firebase UID) | Until you delete your account, then **removed immediately** |
+| Favorites and recents | Until you delete your account, or you remove them individually in the App |
+| Search analytics (logged-in users) | Until you delete your account, then **anonymized** (the search text is retained for service improvement but no longer linked to you) |
+| Search analytics (anonymous users) | Retained while the service is operational; deletion available on request via support email |
+| Meme sharing events (telemetry) | Anonymous by design — no user identifier stored; retained while the service is operational |
+| FCM device tokens | Until you uninstall the App, deauthorize push notifications, or the token is refreshed |
+| Account deletion compliance record | Retained indefinitely as a hashed identifier only (required by GDPR Article 30 and equivalent regulations); contains no recoverable personal data |
+| Server-side operational logs | Cycled out by log rotation (typically within 30 days) |
 
-When you delete your account, we delete or anonymize your account data within 30 days, except where retention is required by law.
+We do not currently run automated retention/cleanup jobs for search analytics. Search analytics for logged-in users are anonymized immediately when an account is deleted. For other deletion requests, contact us at [samwisestudios01@gmail.com](mailto:samwisestudios01@gmail.com) and we will action your request within 30 days.
+
+When you delete your account, your account data is removed immediately. The deletion is atomic — there is no soft-delete or grace period. If you sign back in with the same Google account later, a fresh account is created with no connection to the deleted one.
 
 ---
 
