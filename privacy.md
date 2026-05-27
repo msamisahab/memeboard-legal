@@ -1,7 +1,7 @@
 # Privacy Policy
 
-**Effective date:** May 27, 2026
-**Last updated:** May 27, 2026
+- **Effective date:** May 27, 2026
+  **Last updated:** May 28, 2026
 
 ## Overview
 
@@ -92,20 +92,26 @@ Memeboard uses the following third-party services to operate. Each service has i
 
 - **Firebase Cloud Messaging / FCM** (Google LLC) — for push notifications. Receives a per-device FCM token. [Firebase privacy](https://firebase.google.com/support/privacy)
 
+- **Firebase Crashlytics** (Google LLC) — for crash reporting and stability monitoring. When the App crashes or encounters an error, Crashlytics receives stack traces, breadcrumb logs (non-sensitive diagnostic context), device model, OS version, App version, and anonymous crash event identifiers. Does NOT include user content, search queries, message content, or personally identifiable information beyond the Firebase user ID. Includes native (NDK) crash support for native libraries used by the App. [Firebase privacy](https://firebase.google.com/support/privacy)
+
+- **Firebase Analytics** (Google LLC) — for usage analytics. Receives event names and parameters about your in-app actions (which screens you view, which categories you open, search performed events, meme played, meme shared, meme favorited, keyboard enabled, account deleted, notification received/opened). User properties (keyboard enabled status, App version, account age in days). Does NOT include actual content of searches, names of specific memes, or message content. Includes screen view events tracking your navigation between screens. [Firebase privacy](https://firebase.google.com/support/privacy)
+
+- **Firebase Performance Monitoring** (Google LLC) — for App performance metrics. Receives App startup times (cold, warm, hot start phases), network request latency by URL pattern for our backend APIs and content delivery requests, and screen render durations. Does NOT include request URLs in full detail, request bodies, or response payloads — only timing data. [Firebase privacy](https://firebase.google.com/support/privacy)
+
 - **Google Sign-In and Credentials Manager** (Google LLC) — when you sign in with Google, Google shares your name, email, profile photo URL, and account ID with us. [Google privacy](https://policies.google.com/privacy)
 
 - **Klipy** (Klipy Inc.) — provides the GIF library inside the Memeboard keyboard. When you search or browse GIFs, your search query and IP address are sent to Klipy to fetch results. [Klipy privacy](https://klipy.com/privacy)
 
-- **Memeboard backend at onlymemes.cloud** (Samwise & Co) — our own servers receive your authentication token, search queries, the memes you favorite or share, your recents list, and aggregated analytics events. This is first-party processing governed by this Privacy Policy.
+- **Cloudflare** (Cloudflare Inc.) — content delivery network. Both memes and GIFs are delivered via Cloudflare's CDN for fast, reliable streaming. Cloudflare caches public content assets close to your location. No personal data is stored in the CDN cache. [Cloudflare privacy](https://www.cloudflare.com/privacypolicy/)
+
+- **Memeboard backend at onlymemes.cloud** (Samwise & Co) — our own servers receive your authentication token, search queries, the memes you favorite or share, your recents list, FCM device tokens, keyboard enablement state, and aggregated analytics events. This is first-party processing governed by this Privacy Policy.
 
 ### Services we DO NOT use
 
-- We do not use any advertising SDKs. There is no AdMob or third-party ad network in the App.
-- We do not use Google Analytics for Firebase, Firebase Crashlytics, OneSignal, Mixpanel, Amplitude, Segment, or any other third-party analytics or crash reporting service.
+- We do not use any advertising SDKs. There is no AdMob or third-party ad network in the App. (Note: Google AdMob is planned for v1.0.1+ production releases — not in closed testing. This Privacy Policy will be updated before AdMob is integrated.)
+- We do not use OneSignal, Mixpanel, Amplitude, Segment, or any other third-party analytics service beyond Firebase Analytics listed above.
 
 We will update this list before adding new third-party services to the App.
-
----
 
 ## 6. International Data Transfers
 
