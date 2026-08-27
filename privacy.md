@@ -1,7 +1,7 @@
 # Privacy Policy
 
 - **Effective date:** May 27, 2026
-  **Last updated:** May 28, 2026
+  **Last updated:** August 27, 2026
 
 ## Overview
 
@@ -36,6 +36,7 @@ We operate Memeboard under the laws of the United Arab Emirates, including the U
 - **Push notification device token**: a per-device identifier from Firebase Cloud Messaging, used to deliver notifications.
 - **Usage data**: search queries you enter in the App, memes you favorite, memes you share, screens you visit, and aggregated interaction events sent to our analytics endpoints for product improvement.
 - **Technical data**: IP address (collected during HTTP requests by service providers), device operating system, and timestamps of requests.
+- **Advertising ID**: the App declares the `AD_ID` permission and our advertising partners access your Google Advertising ID (a resettable identifier), together with coarse device and IP information, to select and measure ads. You can reset or delete this identifier at any time in **Android Settings → Privacy → Ads**.
 
 ### 2.3 Information collected through the Memeboard Keyboard
 
@@ -67,7 +68,9 @@ We use your information to:
 - Detect, prevent, and respond to fraud, security incidents, and abuse
 - Comply with legal obligations
 
-We do not sell your personal data. We do not share your personal data for cross-context behavioral advertising.
+We do not sell your personal data.
+
+Where you consent to personalized ads, our advertising partners (see Section 5) use your Advertising ID and ad interaction data to select ads based on activity across other apps and sites. Under some laws — including the CCPA — this counts as "sharing" for cross-context behavioral advertising. You can decline this at any time (see Section 5.1), and where you do, the App requests non-personalized ads only.
 
 ---
 
@@ -76,7 +79,7 @@ We do not sell your personal data. We do not share your personal data for cross-
 We rely on the following legal bases for processing personal data:
 
 - **Contract**: to deliver the App and the services you sign up for
-- **Consent**: where you choose to sign in with Google or receive push notifications; you may withdraw consent at any time
+- **Consent**: where you choose to sign in with Google, receive push notifications, or agree to personalized advertising; you may withdraw consent at any time
 - **Legitimate interest**: for product improvement, security, and abuse prevention, balanced against your privacy rights
 - **Legal obligation**: where law requires us to process or retain data
 
@@ -106,10 +109,24 @@ Memeboard uses the following third-party services to operate. Each service has i
 
 - **Memeboard backend at onlymemes.cloud** (Samwise & Co) — our own servers receive your authentication token, search queries, the memes you favorite or share, your recents list, FCM device tokens, keyboard enablement state, and aggregated analytics events. This is first-party processing governed by this Privacy Policy.
 
+### Advertising partners
+
+The App shows ads in the meme and GIF areas of the keyboard and in the meme feeds, search results, and player inside the main app. Ads are clearly labelled as sponsored.
+
+- **Google AdMob** (Google LLC) — serves ads and runs the ad auction. Receives your Advertising ID, IP address, coarse location derived from IP, device type and OS version, and ad events (request, impression, click). Does NOT receive your search queries, the memes you view or send, your account email, or any text you type. [Google advertising privacy](https://policies.google.com/technologies/partner-sites)
+
+- **Meta Audience Network** (Meta Platforms, Inc.) — bids to fill those same ad slots through AdMob mediation. When it bids, it receives your Advertising ID, IP address, device information, and ad events. It does not receive your Memeboard account data, search queries, or message content, and using the App does not connect it to any Facebook or Instagram account. [Meta Audience Network privacy](https://www.facebook.com/about/privacy)
+
+### 5.1 Your choices about advertising
+
+- **In the EEA, UK, and Switzerland**, we ask for your consent before any ad partner processes your data, using Google's certified consent tool. If you decline, the App requests non-personalized ads only. You can change your choice at any time from the privacy options in the App.
+- **Everywhere**, you can reset or delete your Advertising ID, or opt out of ad personalization entirely, in **Android Settings → Privacy → Ads**.
+- Declining personalized ads does not remove ads and does not restrict any other App feature.
+
 ### Services we DO NOT use
 
-- We do not use any advertising SDKs. There is no AdMob or third-party ad network in the App. (Note: Google AdMob is planned for v1.0.1+ production releases — not in closed testing. This Privacy Policy will be updated before AdMob is integrated.)
 - We do not use OneSignal, Mixpanel, Amplitude, Segment, or any other third-party analytics service beyond Firebase Analytics listed above.
+- We do not use Facebook Login, the Facebook SDK for social features, or any Meta product other than the Audience Network ad bidding described above.
 
 We will update this list before adding new third-party services to the App.
 
@@ -171,7 +188,7 @@ You have the following rights regarding your personal data. To exercise any righ
 
 - **Right to know** what personal information we collect, use, and share
 - **Right to delete** personal information we hold about you
-- **Right to opt-out of sale or sharing** of personal information (we do not sell or share personal information for cross-context behavioral advertising)
+- **Right to opt-out of sale or sharing** of personal information. We do not sell personal information. We do "share" it for cross-context behavioral advertising when you allow personalized ads; you can opt out at any time as described in Section 5.1.
 - **Right to non-discrimination** for exercising your privacy rights
 - **Right to limit use of sensitive personal information**
 
