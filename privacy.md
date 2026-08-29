@@ -1,7 +1,7 @@
 # Privacy Policy
 
 - **Effective date:** May 27, 2026
-  **Last updated:** August 27, 2026
+  **Last updated:** August 29, 2026
 
 ## Overview
 
@@ -116,6 +116,8 @@ The App shows ads in the meme and GIF areas of the keyboard and in the meme feed
 - **Google AdMob** (Google LLC) — serves ads and runs the ad auction. Receives your Advertising ID, IP address, coarse location derived from IP, device type and OS version, and ad events (request, impression, click). Does NOT receive your search queries, the memes you view or send, your account email, or any text you type. [Google advertising privacy](https://policies.google.com/technologies/partner-sites)
 
 - **Meta Audience Network** (Meta Platforms, Inc.) — bids to fill those same ad slots through AdMob mediation. When it bids, it receives your Advertising ID, IP address, device information, and ad events. It does not receive your Memeboard account data, search queries, or message content, and using the App does not connect it to any Facebook or Instagram account. [Meta Audience Network privacy](https://www.facebook.com/about/privacy)
+
+- **Unity Ads** (Unity Technologies) — bids to fill ad slots through AdMob mediation. When it bids, it may receive your Advertising ID, IP address, device information, approximate location derived from IP, and ad events. It does not receive your Memeboard account data, search queries, or message content. [Unity privacy](https://unity.com/legal/privacy-policy)
 
 ### 5.1 Your choices about advertising
 
